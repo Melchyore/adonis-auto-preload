@@ -1,0 +1,16 @@
+node_modules
+build
+coverage
+.vscode
+.DS_STORE
+.env
+tmp
+test/__app
+.nyc_output
+.idea
+.vscode/
+*.sublime-project
+*.sublime-workspace
+*.log
+dist
+shrinkwrap.yaml
