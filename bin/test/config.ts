@@ -1,5 +1,6 @@
+import { resolve, join } from 'node:path'
+
 import { Filesystem } from '@poppinss/dev-utils'
-import { resolve, join } from 'path'
 
 export const fs = new Filesystem(join(__dirname, 'app'))
 
