@@ -90,6 +90,8 @@ test.group('Auto preload', (group) => {
         @column()
         public name: string
       }
+
+      User.boot()
     }).toThrowError(
       'The model "User" has wrong relationships to be auto-preloaded. Only string and function types are allowed'
     )
