@@ -336,4 +336,4 @@ Give a ⭐️ if this project helped you!
 ## 📝 **License**
 
 Copyright © 2022 [Oussama Benhamed](https://github.com/Melchyore).<br />
-This project is [MIT](https://github.com/Melchyore/adonis-auto-preload/blob/master/LICENSE.ld) licensed.
+This project is [MIT](https://github.com/Melchyore/adonis-auto-preload/blob/master/LICENSE.md) licensed.
