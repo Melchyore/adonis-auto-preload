@@ -1,5 +1,5 @@
 {
-  "name": "adonis-auto-preload",
+  "name": "@melchyore/adonis-auto-preload",
   "version": "0.0.0",
   "description": "Auto-preload multiple relationships when retrieving Lucid models",
   "keywords": [
@@ -167,7 +167,6 @@
     "anyBranch": false
   },
   "adonisjs": {
-    "instructions": "./build/instructions.js",
     "instructionsMd": "./build/instructions.md",
     "types": "@melchyore/adonis-auto-preload",
     "providers": [
