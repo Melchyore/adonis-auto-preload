@@ -264,6 +264,10 @@ export default class UsersController {
 }
 ```
 
+> **Note**
+>
+> You can chain other model methods with mixin methods. For example, `await User.withoutAny().query().paginate(1)`
+
 ## **Limitations**
 - Consider the following scenario: `User` -> hasMany -> `Post` -> hasMany -> `Comments`. If you auto-preload `user` and `comments` from `Post` and you auto-preload `posts` from `User`, you will end-up in a infinite loop and your application will stop working.
 
