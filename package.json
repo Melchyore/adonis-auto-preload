@@ -45,7 +45,6 @@
     "url": "https://github.com/Melchyore/adonis-auto-preload/issues"
   },
   "homepage": "https://github.com/Melchyore/adonis-auto-preload#readme",
-  "private": true,
   "scripts": {
     "mrm": "mrm --preset=@adonisjs/mrm-preset",
     "dev": "node ace serve --watch",
