@@ -14,3 +14,4 @@ test/__app
 *.log
 dist
 shrinkwrap.yaml
+*.tgz
