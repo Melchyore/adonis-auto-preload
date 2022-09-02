@@ -44,17 +44,6 @@ export const AutoPreload: AutoPreloadMixin = (superclass) => {
           this.handleAutoPreload(query, false)
         }
       )
-
-      /**
-       * The paginate method executes two queries and the
-       * first one will restore the preloads. To handle this
-       * behavior, the before paginate hook will instruct
-       * this package to not restore the preloads array,
-       * leaving this job to after paginate hook.
-       */
-      this.after('paginate', () => {
-        //this.$with = [...this.$originalWith]
-      })
     }
 
     public static without(relationships: any): any {
