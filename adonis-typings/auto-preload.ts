@@ -1,10 +1,9 @@
 declare module '@ioc:Adonis/Addons/AutoPreload' {
   import type {
+    BaseModel,
     LucidModel,
     LucidRow,
-    ModelQueryBuilderContract,
     ExtractModelRelations,
-    ModelRelations,
   } from '@ioc:Adonis/Lucid/Orm'
   import type { NormalizeConstructor } from '@ioc:Adonis/Core/Helpers'
 
@@ -35,7 +34,7 @@ declare module '@ioc:Adonis/Addons/AutoPreload' {
   export interface AutoPreloadMixin {
     <T extends NormalizeConstructor<LucidModel>>(superclass: T): T &
       AutoPreloadModel & {
-        new (...args: Array<any>): LucidRow
+        new (...args: Array<any>): {}
 
         //$with: Array<string | ((query: ModelQueryBuilderContract<typeof this>) => void)>
         without<U extends LucidModel>(this: U, relationships: Array<GetWith<U>>): U

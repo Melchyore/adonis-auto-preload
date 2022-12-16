@@ -61,7 +61,8 @@
     "commit": "git-cz",
     "release": "np --message=\"chore(release): %s\"",
     "version": "npm run build",
-    "sync-labels": "github-label-sync --labels ./node_modules/@adonisjs/mrm-preset/gh-labels.json Melchyore/adonis-auto-preload"
+    "sync-labels": "github-label-sync --labels ./node_modules/@adonisjs/mrm-preset/gh-labels.json Melchyore/adonis-auto-preload",
+    "prepare": "npm run build"
   },
   "eslintConfig": {
     "extends": [
