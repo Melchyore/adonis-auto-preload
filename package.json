@@ -1,6 +1,6 @@
 {
   "name": "@melchyore/adonis-auto-preload",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Auto-preload multiple relationships when retrieving Lucid models",
   "keywords": [
     "typescript",
