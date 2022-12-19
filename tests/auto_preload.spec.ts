@@ -96,4 +96,24 @@ test.group('Auto preload', (group) => {
       'The model "User" has wrong relationships to be auto-preloaded. Only string and function types are allowed'
     )
   })
+
+  test('model extending from a custom base model and AutoPreload mixin should have $with property', async ({
+    expect,
+  }) => {
+    class CustomBaseModel extends BaseModel {}
+
+    class User extends compose(CustomBaseModel, AutoPreload) {
+      @column({ isPrimary: true })
+      public id: number
+
+      @column()
+      public email: string
+
+      @column()
+      public name: string
+    }
+
+    expect(User).toHaveProperty('$with')
+    expect(User.$with).toHaveLength(0)
+  })
 })
